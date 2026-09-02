@@ -1,0 +1,1 @@
+function r(o,n,t="text/plain"){const s=n.toLowerCase().endsWith(".dxf")||t.toLowerCase().includes("dxf")?`\uFEFF${o}`:o,a=t.includes("charset=")?t:`${t};charset=utf-8`,l=new Blob([s],{type:a}),c=URL.createObjectURL(l),e=document.createElement("a");e.href=c,e.download=n,e.click(),URL.revokeObjectURL(c)}export{r as d};
