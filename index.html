@@ -8,10 +8,10 @@
     <script>
       // 提前注入高德地图安全密钥，确保在 JSAPI 加载前生效
       (function() {
-        var code = '32d79ad508aafa3a6d43554040e10002';
+        var code = 'e559bfc811526cbf4ab18da872d0fcbd';
         // 如果环境变量未配置或为占位符，回退到默认 Key（SolarGlyph-JS）
         if (!code || /^(your_|changeme|$)/i.test(code)) {
-          code = '32d79ad508aafa3a6d43554040e10002';
+          code = 'e559bfc811526cbf4ab18da872d0fcbd';
         }
         window._AMapSecurityConfig = { securityJsCode: code };
       })();
